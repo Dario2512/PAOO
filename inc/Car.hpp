@@ -10,10 +10,13 @@ private:
 
 public:
     // Constructorul cu initializare a membrilor
-    Car(const std::string &model = "Audi A3", int year = 2020, double mileage = 0.0);
+    Car(const std::string &model = "Brand-Model", int year = 2024, double mileage = 0.0);
 
     // Constructor de copy
     Car(const Car &other);
+
+    //Destructor va fi implementat in viitor cand voi avea ceva alocat dinamic
+    ~Car();
 
     // Supraincarcarea operatorului "="
     Car& operator=(const Car &other);

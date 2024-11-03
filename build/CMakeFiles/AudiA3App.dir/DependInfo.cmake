@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dario/Desktop/PAOO/Car.cpp" "CMakeFiles/AudiA3App.dir/Car.cpp.o" "gcc" "CMakeFiles/AudiA3App.dir/Car.cpp.o.d"
-  "/home/dario/Desktop/PAOO/main.cpp" "CMakeFiles/AudiA3App.dir/main.cpp.o" "gcc" "CMakeFiles/AudiA3App.dir/main.cpp.o.d"
+  "/home/dario/Desktop/PAOO/src/Car.cpp" "CMakeFiles/AudiA3App.dir/src/Car.cpp.o" "gcc" "CMakeFiles/AudiA3App.dir/src/Car.cpp.o.d"
+  "/home/dario/Desktop/PAOO/src/main.cpp" "CMakeFiles/AudiA3App.dir/src/main.cpp.o" "gcc" "CMakeFiles/AudiA3App.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

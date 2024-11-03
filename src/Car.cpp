@@ -1,6 +1,6 @@
-#include "Car.h"
+#include "Car.hpp"
 
-// Constructor cu init a membrilor
+// Constructor cu lista de init
 Car::Car(const std::string &model, int year, double mileage)
     : model(model), year(year), mileage(mileage) {
     std::cout << "Constructorul Car a fost apelat pentru " << model << "\n";
@@ -10,6 +10,11 @@ Car::Car(const std::string &model, int year, double mileage)
 Car::Car(const Car &other)
     : model(other.model), year(other.year), mileage(other.mileage) {
     std::cout << "Constructorul de copiere a fost apelat pentru " << model << "\n";
+}
+
+// Destructor
+Car::~Car() {
+    std::cout << "Destructorul Car a fost apelat pentru: " << model << "\n";
 }
 
 // Supraincarcarea operatorului "="

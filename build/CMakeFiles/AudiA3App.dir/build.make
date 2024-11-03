@@ -69,44 +69,44 @@ include CMakeFiles/AudiA3App.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AudiA3App.dir/flags.make
 
-CMakeFiles/AudiA3App.dir/main.cpp.o: CMakeFiles/AudiA3App.dir/flags.make
-CMakeFiles/AudiA3App.dir/main.cpp.o: /home/dario/Desktop/PAOO/main.cpp
-CMakeFiles/AudiA3App.dir/main.cpp.o: CMakeFiles/AudiA3App.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AudiA3App.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudiA3App.dir/main.cpp.o -MF CMakeFiles/AudiA3App.dir/main.cpp.o.d -o CMakeFiles/AudiA3App.dir/main.cpp.o -c /home/dario/Desktop/PAOO/main.cpp
+CMakeFiles/AudiA3App.dir/src/main.cpp.o: CMakeFiles/AudiA3App.dir/flags.make
+CMakeFiles/AudiA3App.dir/src/main.cpp.o: /home/dario/Desktop/PAOO/src/main.cpp
+CMakeFiles/AudiA3App.dir/src/main.cpp.o: CMakeFiles/AudiA3App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AudiA3App.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudiA3App.dir/src/main.cpp.o -MF CMakeFiles/AudiA3App.dir/src/main.cpp.o.d -o CMakeFiles/AudiA3App.dir/src/main.cpp.o -c /home/dario/Desktop/PAOO/src/main.cpp
 
-CMakeFiles/AudiA3App.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudiA3App.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/main.cpp > CMakeFiles/AudiA3App.dir/main.cpp.i
+CMakeFiles/AudiA3App.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudiA3App.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/main.cpp > CMakeFiles/AudiA3App.dir/src/main.cpp.i
 
-CMakeFiles/AudiA3App.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudiA3App.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/main.cpp -o CMakeFiles/AudiA3App.dir/main.cpp.s
+CMakeFiles/AudiA3App.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudiA3App.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/main.cpp -o CMakeFiles/AudiA3App.dir/src/main.cpp.s
 
-CMakeFiles/AudiA3App.dir/Car.cpp.o: CMakeFiles/AudiA3App.dir/flags.make
-CMakeFiles/AudiA3App.dir/Car.cpp.o: /home/dario/Desktop/PAOO/Car.cpp
-CMakeFiles/AudiA3App.dir/Car.cpp.o: CMakeFiles/AudiA3App.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AudiA3App.dir/Car.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudiA3App.dir/Car.cpp.o -MF CMakeFiles/AudiA3App.dir/Car.cpp.o.d -o CMakeFiles/AudiA3App.dir/Car.cpp.o -c /home/dario/Desktop/PAOO/Car.cpp
+CMakeFiles/AudiA3App.dir/src/Car.cpp.o: CMakeFiles/AudiA3App.dir/flags.make
+CMakeFiles/AudiA3App.dir/src/Car.cpp.o: /home/dario/Desktop/PAOO/src/Car.cpp
+CMakeFiles/AudiA3App.dir/src/Car.cpp.o: CMakeFiles/AudiA3App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AudiA3App.dir/src/Car.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AudiA3App.dir/src/Car.cpp.o -MF CMakeFiles/AudiA3App.dir/src/Car.cpp.o.d -o CMakeFiles/AudiA3App.dir/src/Car.cpp.o -c /home/dario/Desktop/PAOO/src/Car.cpp
 
-CMakeFiles/AudiA3App.dir/Car.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudiA3App.dir/Car.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/Car.cpp > CMakeFiles/AudiA3App.dir/Car.cpp.i
+CMakeFiles/AudiA3App.dir/src/Car.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AudiA3App.dir/src/Car.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/Car.cpp > CMakeFiles/AudiA3App.dir/src/Car.cpp.i
 
-CMakeFiles/AudiA3App.dir/Car.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudiA3App.dir/Car.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/Car.cpp -o CMakeFiles/AudiA3App.dir/Car.cpp.s
+CMakeFiles/AudiA3App.dir/src/Car.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AudiA3App.dir/src/Car.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/Car.cpp -o CMakeFiles/AudiA3App.dir/src/Car.cpp.s
 
 # Object files for target AudiA3App
 AudiA3App_OBJECTS = \
-"CMakeFiles/AudiA3App.dir/main.cpp.o" \
-"CMakeFiles/AudiA3App.dir/Car.cpp.o"
+"CMakeFiles/AudiA3App.dir/src/main.cpp.o" \
+"CMakeFiles/AudiA3App.dir/src/Car.cpp.o"
 
 # External object files for target AudiA3App
 AudiA3App_EXTERNAL_OBJECTS =
 
-AudiA3App: CMakeFiles/AudiA3App.dir/main.cpp.o
-AudiA3App: CMakeFiles/AudiA3App.dir/Car.cpp.o
+AudiA3App: CMakeFiles/AudiA3App.dir/src/main.cpp.o
+AudiA3App: CMakeFiles/AudiA3App.dir/src/Car.cpp.o
 AudiA3App: CMakeFiles/AudiA3App.dir/build.make
 AudiA3App: CMakeFiles/AudiA3App.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AudiA3App"

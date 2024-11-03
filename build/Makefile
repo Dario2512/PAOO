@@ -129,53 +129,53 @@ AudiA3App/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/build
 .PHONY : AudiA3App/fast
 
-Car.o: Car.cpp.o
-.PHONY : Car.o
+src/Car.o: src/Car.cpp.o
+.PHONY : src/Car.o
 
 # target to build an object file
-Car.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/Car.cpp.o
-.PHONY : Car.cpp.o
+src/Car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/src/Car.cpp.o
+.PHONY : src/Car.cpp.o
 
-Car.i: Car.cpp.i
-.PHONY : Car.i
+src/Car.i: src/Car.cpp.i
+.PHONY : src/Car.i
 
 # target to preprocess a source file
-Car.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/Car.cpp.i
-.PHONY : Car.cpp.i
+src/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/src/Car.cpp.i
+.PHONY : src/Car.cpp.i
 
-Car.s: Car.cpp.s
-.PHONY : Car.s
+src/Car.s: src/Car.cpp.s
+.PHONY : src/Car.s
 
 # target to generate assembly for a file
-Car.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/Car.cpp.s
-.PHONY : Car.cpp.s
+src/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/src/Car.cpp.s
+.PHONY : src/Car.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AudiA3App.dir/build.make CMakeFiles/AudiA3App.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AudiA3App"
-	@echo "... Car.o"
-	@echo "... Car.i"
-	@echo "... Car.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Car.o"
+	@echo "... src/Car.i"
+	@echo "... src/Car.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
