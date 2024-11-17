@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o CMakeFiles/VehicleApp.dir/src/main.cpp.o CMakeFiles/VehicleApp.dir/src/Car.cpp.o CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o -o VehicleApp

@@ -1,6 +1,7 @@
-CMakeFiles/AudiA3App.dir/src/Car.cpp.o: \
- /home/dario/Desktop/PAOO/src/Car.cpp /usr/include/stdc-predef.h \
- /home/dario/Desktop/PAOO/inc/Car.hpp /usr/include/c++/13/iostream \
+CMakeFiles/VehicleApp.dir/src/main.cpp.o: \
+ /home/dario/Desktop/PAOO/src/main.cpp /usr/include/stdc-predef.h \
+ /home/dario/Desktop/PAOO/inc/Car.hpp \
+ /home/dario/Desktop/PAOO/inc/Vehicle.hpp /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -123,4 +124,5 @@ CMakeFiles/AudiA3App.dir/src/Car.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstring \
- /usr/include/string.h /usr/include/strings.h
+ /usr/include/string.h /usr/include/strings.h \
+ /home/dario/Desktop/PAOO/inc/Motorcycle.hpp

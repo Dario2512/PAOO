@@ -1,32 +1,33 @@
 #pragma once
+#include "Vehicle.hpp"
 #include <iostream>
 #include <string>
 
-class Car {
+class Car : public Vehicle {
 private:
-    std::string model;
+    char* fuelType; // Alocare dinamica pentru tipul de combustibil
     int year;
     double mileage;
 
 public:
-    // Constructorul cu initializare a membrilor
-    Car(const std::string &model = "Brand-Model", int year = 2024, double mileage = 0.0);
+    // Constructor
+    Car(const std::string& model = "Brand-Model", int year = 2024, double mileage = 0.0, const std::string& fuel = "Gasoline");
 
-    // Constructor de copy
-    Car(const Car &other);
+    // Copy Constructor
+    Car(const Car& other);
 
-    //Destructor va fi implementat in viitor cand voi avea ceva alocat dinamic
+    // Move Constructor
+    Car(Car&& other) noexcept;
+
+    // Operator de asignare
+    Car& operator=(const Car& other);
+
+    // Move Assignment Operator
+    Car& operator=(Car&& other) noexcept;
+
+    // Destructor
     ~Car();
 
-    // Supraincarcarea operatorului "="
-    Car& operator=(const Car &other);
-
-    // Gettere si Settere (incapsulare)
-    std::string getModel() const;
-    int getYear() const;
-    double getMileage() const;
-    void setMileage(double newMileage);
-
-    // Metoda pentru print informatiilor despre masina
-    void displayInfo() const;
+    // Metoda de afisare
+    void displayInfo() const override;
 };

@@ -1,42 +1,65 @@
 #include "Car.hpp"
+#include <cstring>
 
-// Constructor cu lista de init
-Car::Car(const std::string &model, int year, double mileage)
-    : model(model), year(year), mileage(mileage) {
+Car::Car(const std::string& model, int year, double mileage, const std::string& fuel)
+    : Vehicle(model), year(year), mileage(mileage) {
+    fuelType = new char[fuel.length() + 1];
+    std::strcpy(fuelType, fuel.c_str());
     std::cout << "Constructorul Car a fost apelat pentru " << model << "\n";
 }
 
-// Constructor de copy
-Car::Car(const Car &other)
-    : model(other.model), year(other.year), mileage(other.mileage) {
-    std::cout << "Constructorul de copiere a fost apelat pentru " << model << "\n";
+// Copy Constructor
+Car::Car(const Car& other) : Vehicle(other), year(other.year), mileage(other.mileage) {
+    fuelType = new char[std::strlen(other.fuelType) + 1];
+    std::strcpy(fuelType, other.fuelType);
+    std::cout << "Copy Constructorul Car a fost apelat\n";
+}
+
+// Move Constructor
+Car::Car(Car&& other) noexcept : Vehicle(std::move(other)), year(other.year), mileage(other.mileage) {
+    fuelType = other.fuelType;
+    other.fuelType = nullptr;
+    std::cout << "Move Constructorul Car a fost apelat\n";
+}
+
+// Operator de asignare
+Car& Car::operator=(const Car& other) {
+    if (this != &other) {
+        Vehicle::operator=(other); // Copierea parti de baza
+        delete[] fuelType;
+
+        fuelType = new char[std::strlen(other.fuelType) + 1];
+        std::strcpy(fuelType, other.fuelType);
+        year = other.year;
+        mileage = other.mileage;
+    }
+    std::cout << "Assign Operator Car apelat\n";
+    return *this;
+}
+
+// Move Assignment Operator
+Car& Car::operator=(Car&& other) noexcept {
+    if (this != &other) {
+        Vehicle::operator=(std::move(other)); // Mutarea partii de baza
+        delete[] fuelType;
+
+        fuelType = other.fuelType;
+        other.fuelType = nullptr;
+        year = other.year;
+        mileage = other.mileage;
+    }
+    std::cout << "Move Assign Operator Car apelat\n";
+    return *this;
 }
 
 // Destructor
 Car::~Car() {
-    std::cout << "Destructorul Car a fost apelat pentru: " << model << "\n";
+    std::cout << "Destructorul Car a fost apelat pentru " << model << "\n";
+    delete[] fuelType;
 }
 
-// Supraincarcarea operatorului "="
-Car& Car::operator=(const Car &other) {
-    std::cout << "Operatorul de asignare a fost apelat\n";
-    if (this != &other) { // Prevenire auto assign
-        model = other.model;
-        year = other.year;
-        mileage = other.mileage;
-    }
-    return *this;
-}
-
-// Gettere
-std::string Car::getModel() const { return model; }
-int Car::getYear() const { return year; }
-double Car::getMileage() const { return mileage; }
-
-// Setter
-void Car::setMileage(double newMileage) { mileage = newMileage; }
-
-// Metoda pentru afișarea info despre masina
+// Metoda de afisare
 void Car::displayInfo() const {
-    std::cout << "Model: " << model << ", Year: " << year << ", Mileage: " << mileage << " km\n";
+    Vehicle::displayInfo();
+    std::cout << "Year: " << year << ", Mileage: " << mileage << ", Fuel: " << fuelType << "\n";
 }

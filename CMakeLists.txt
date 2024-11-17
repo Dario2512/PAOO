@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(AudiA3App)
+project(VehicleApp)
 
 # Setare standarc C++
 set(CMAKE_CXX_STANDARD 11)
@@ -8,7 +8,11 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(inc)
 
 # adaugarea source files
-add_executable(AudiA3App
+add_executable(VehicleApp
+    src/Vehicle.cpp
     src/main.cpp
     src/Car.cpp
+    src/Motorcycle.cpp
 )
+
+set(CMAKE_VERBOSE_MAKEFILE ON)
