@@ -40,24 +40,26 @@ Motorcycle& Motorcycle::operator=(const Motorcycle& other) {
 Motorcycle& Motorcycle::operator=(Motorcycle&& other) noexcept {
     if (this != &other) {
         Vehicle::operator=(std::move(other));
-        delete[] engineType;
 
+        delete[] engineType;
         engineType = other.engineType;
-        other.engineType = nullptr;
         cc = other.cc;
+        other.engineType = nullptr;
     }
     std::cout << "Move Assign Operator Motorcycle apelat\n";
     return *this;
 }
 
+
 // Destructor
 Motorcycle::~Motorcycle() {
-    std::cout << "Destructorul Motorcycle a fost apelat pentru " << model << "\n";
-    delete[] engineType;
+    std::cout << "Destructorul Motorcycle a fost apelat pentru " << (model ? model : "nullptr") << "\n";
+    if (engineType) delete[] engineType;
 }
 
 // Metoda de afisare
 void Motorcycle::displayInfo() const {
     Vehicle::displayInfo();
-    std::cout << "Engine: " << engineType << ", CC: " << cc << "\n";
+    std::cout << "Engine: " << (engineType ? engineType : "nullptr") << ", CC: " << cc << "\n";
 }
+

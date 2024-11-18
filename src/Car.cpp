@@ -40,13 +40,13 @@ Car& Car::operator=(const Car& other) {
 // Move Assignment Operator
 Car& Car::operator=(Car&& other) noexcept {
     if (this != &other) {
-        Vehicle::operator=(std::move(other)); // Mutarea partii de baza
-        delete[] fuelType;
+        Vehicle::operator=(std::move(other));
 
+        delete[] fuelType;
         fuelType = other.fuelType;
-        other.fuelType = nullptr;
         year = other.year;
         mileage = other.mileage;
+        other.fuelType = nullptr;
     }
     std::cout << "Move Assign Operator Car apelat\n";
     return *this;
@@ -54,12 +54,14 @@ Car& Car::operator=(Car&& other) noexcept {
 
 // Destructor
 Car::~Car() {
-    std::cout << "Destructorul Car a fost apelat pentru " << model << "\n";
-    delete[] fuelType;
+    std::cout << "Destructorul Car a fost apelat pentru " << (model ? model : "nullptr") << "\n";
+    if (fuelType) delete[] fuelType;
 }
 
 // Metoda de afisare
 void Car::displayInfo() const {
     Vehicle::displayInfo();
-    std::cout << "Year: " << year << ", Mileage: " << mileage << ", Fuel: " << fuelType << "\n";
+    std::cout << "Year: " << year << ", Mileage: " << mileage << ", Fuel: " 
+              << (fuelType ? fuelType : "nullptr") << "\n";
 }
+

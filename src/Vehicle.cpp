@@ -43,13 +43,21 @@ Vehicle& Vehicle::operator=(Vehicle&& other) noexcept {
     return *this;
 }
 
+
 // Destructor
 Vehicle::~Vehicle() {
-    std::cout << "Destructorul Vehicle a fost apelat pentru " << (model ? model : "nullptr") << "\n";
-    delete[] model;
+    if (model) {
+        std::cout << "Destructorul Vehicle a fost apelat pentru " << model << "\n";
+        delete[] model;
+    }
 }
+
 
 // Afisare 
 void Vehicle::displayInfo() const {
-    std::cout << "Vehicle: " << model << "\n";
+    if (model) {
+        std::cout << "Vehicle: " << model << "\n";
+    } else {
+        std::cout << "Vehicle: nullptr\n";
+    }
 }
