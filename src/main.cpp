@@ -6,9 +6,11 @@ int main() {
     std::cout << "\n=== Test: Instantiere obiecte ===\n";
     Car audiA3("Audi A3", 2010, 230000, "Diesel");
     Motorcycle yamahaR1("Yamaha R1", 1000, "V4");
-
+    Vehicle* vehicle = new Car("BMW", 2010, 300000, "diesel");
     audiA3.displayInfo();
     yamahaR1.displayInfo();
+    
+
 
     std::cout << "\n=== Test: Copy Constructor ===\n";
     Car audiCopy = audiA3; 

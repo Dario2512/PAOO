@@ -18,7 +18,7 @@ Motorcycle::Motorcycle(const Motorcycle& other) : Vehicle(other), cc(other.cc) {
 // Move Constructor
 Motorcycle::Motorcycle(Motorcycle&& other) noexcept : Vehicle(std::move(other)), cc(other.cc) {
     engineType = other.engineType;
-    other.engineType = nullptr;
+    other.engineType = nullptr; 
     std::cout << "Move Constructorul Motorcycle apelat\n";
 }
 
