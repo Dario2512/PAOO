@@ -1,29 +1,13 @@
 #pragma once
+#include <string>
 #include <iostream>
-#include <cstring> 
 
 class Vehicle {
-protected:
-    char* model;
-
 public:
-    Vehicle(const std::string& model = "Generic-Vehicle");
-    
-    // Copy Constructor
-    Vehicle(const Vehicle& other);
+    virtual ~Vehicle() = default;
 
-    // Move Constructor
-    Vehicle(Vehicle&& other) noexcept;
+    // Metode pur virtuala
+    virtual void display() const = 0;
 
-    // Operator de asignare
-    Vehicle& operator=(const Vehicle& other);
-
-    // Move Assignment Operator
-    Vehicle& operator=(Vehicle&& other) noexcept;
-
-    // Destructor virtual
-    virtual ~Vehicle();
-
-    // Functie virtuala pentru afisre
-    virtual void displayInfo() const;
+    virtual std::string getModel() const = 0;
 };

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dario/Desktop/PAOO/src/Car.cpp" "CMakeFiles/VehicleApp.dir/src/Car.cpp.o" "gcc" "CMakeFiles/VehicleApp.dir/src/Car.cpp.o.d"
+  "/home/dario/Desktop/PAOO/src/CarFleet.cpp" "CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o" "gcc" "CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o.d"
   "/home/dario/Desktop/PAOO/src/Motorcycle.cpp" "CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o" "gcc" "CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o.d"
   "/home/dario/Desktop/PAOO/src/Vehicle.cpp" "CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o" "gcc" "CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o.d"
   "/home/dario/Desktop/PAOO/src/main.cpp" "CMakeFiles/VehicleApp.dir/src/main.cpp.o" "gcc" "CMakeFiles/VehicleApp.dir/src/main.cpp.o.d"

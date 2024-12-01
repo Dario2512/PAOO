@@ -1,67 +1,14 @@
 #include "Car.hpp"
-#include <cstring>
 
-Car::Car(const std::string& model, int year, double mileage, const std::string& fuel)
-    : Vehicle(model), year(year), mileage(mileage) {
-    fuelType = new char[fuel.length() + 1];
-    std::strcpy(fuelType, fuel.c_str());
-    std::cout << "Constructorul Car a fost apelat pentru " << model << "\n";
+Car::Car(const std::string& model, int year, double mileage)
+    : model(model), year(year), mileage(mileage) {}
+
+std::string Car::getModel() const {
+    return model;
 }
 
-// Copy Constructor
-Car::Car(const Car& other) : Vehicle(other), year(other.year), mileage(other.mileage) {
-    fuelType = new char[std::strlen(other.fuelType) + 1];
-    std::strcpy(fuelType, other.fuelType);
-    std::cout << "Copy Constructorul Car a fost apelat\n";
+void Car::display() const {
+    std::cout << "Car -> Model: " << model
+              << ", Year: " << year
+              << ", Mileage: " << mileage << " km\n";
 }
-
-// Move Constructor
-Car::Car(Car&& other) noexcept : Vehicle(std::move(other)), year(other.year), mileage(other.mileage) {
-    fuelType = other.fuelType;
-    other.fuelType = nullptr;
-    std::cout << "Move Constructorul Car a fost apelat\n";
-}
-
-// Operator de asignare
-Car& Car::operator=(const Car& other) {
-    if (this != &other) {
-        Vehicle::operator=(other); // Copierea parti de baza
-        delete[] fuelType;
-
-        fuelType = new char[std::strlen(other.fuelType) + 1];
-        std::strcpy(fuelType, other.fuelType);
-        year = other.year;
-        mileage = other.mileage;
-    }
-    std::cout << "Assign Operator Car apelat\n";
-    return *this;
-}
-
-// Move Assignment Operator
-Car& Car::operator=(Car&& other) noexcept {
-    if (this != &other) {
-        Vehicle::operator=(std::move(other));
-
-        delete[] fuelType;
-        fuelType = other.fuelType;
-        year = other.year;
-        mileage = other.mileage;
-        other.fuelType = nullptr;
-    }
-    std::cout << "Move Assign Operator Car apelat\n";
-    return *this;
-}
-
-// Destructor
-Car::~Car() {
-    std::cout << "Destructorul Car a fost apelat pentru " << (model ? model : "nullptr") << "\n";
-    if (fuelType) delete[] fuelType;
-}
-
-// Metoda de afisare
-void Car::displayInfo() const {
-    Vehicle::displayInfo();
-    std::cout << "Year: " << year << ", Mileage: " << mileage << ", Fuel: " 
-              << (fuelType ? fuelType : "nullptr") << "\n";
-}
-

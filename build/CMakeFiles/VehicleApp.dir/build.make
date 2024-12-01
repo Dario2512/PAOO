@@ -72,10 +72,52 @@ include CMakeFiles/VehicleApp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/VehicleApp.dir/flags.make
 
+CMakeFiles/VehicleApp.dir/src/Car.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
+CMakeFiles/VehicleApp.dir/src/Car.cpp.o: /home/dario/Desktop/PAOO/src/Car.cpp
+CMakeFiles/VehicleApp.dir/src/Car.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VehicleApp.dir/src/Car.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/Car.cpp.o -MF CMakeFiles/VehicleApp.dir/src/Car.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/Car.cpp.o -c /home/dario/Desktop/PAOO/src/Car.cpp
+
+CMakeFiles/VehicleApp.dir/src/Car.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VehicleApp.dir/src/Car.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/Car.cpp > CMakeFiles/VehicleApp.dir/src/Car.cpp.i
+
+CMakeFiles/VehicleApp.dir/src/Car.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VehicleApp.dir/src/Car.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/Car.cpp -o CMakeFiles/VehicleApp.dir/src/Car.cpp.s
+
+CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
+CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o: /home/dario/Desktop/PAOO/src/CarFleet.cpp
+CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o -MF CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o -c /home/dario/Desktop/PAOO/src/CarFleet.cpp
+
+CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/CarFleet.cpp > CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.i
+
+CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/CarFleet.cpp -o CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.s
+
+CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
+CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o: /home/dario/Desktop/PAOO/src/Motorcycle.cpp
+CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o -MF CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o -c /home/dario/Desktop/PAOO/src/Motorcycle.cpp
+
+CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/Motorcycle.cpp > CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.i
+
+CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/Motorcycle.cpp -o CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.s
+
 CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
 CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o: /home/dario/Desktop/PAOO/src/Vehicle.cpp
 CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o -MF CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o -c /home/dario/Desktop/PAOO/src/Vehicle.cpp
 
 CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.i: cmake_force
@@ -89,7 +131,7 @@ CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.s: cmake_force
 CMakeFiles/VehicleApp.dir/src/main.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
 CMakeFiles/VehicleApp.dir/src/main.cpp.o: /home/dario/Desktop/PAOO/src/main.cpp
 CMakeFiles/VehicleApp.dir/src/main.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/VehicleApp.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/VehicleApp.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/main.cpp.o -MF CMakeFiles/VehicleApp.dir/src/main.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/main.cpp.o -c /home/dario/Desktop/PAOO/src/main.cpp
 
 CMakeFiles/VehicleApp.dir/src/main.cpp.i: cmake_force
@@ -100,51 +142,25 @@ CMakeFiles/VehicleApp.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VehicleApp.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/main.cpp -o CMakeFiles/VehicleApp.dir/src/main.cpp.s
 
-CMakeFiles/VehicleApp.dir/src/Car.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
-CMakeFiles/VehicleApp.dir/src/Car.cpp.o: /home/dario/Desktop/PAOO/src/Car.cpp
-CMakeFiles/VehicleApp.dir/src/Car.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/VehicleApp.dir/src/Car.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/Car.cpp.o -MF CMakeFiles/VehicleApp.dir/src/Car.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/Car.cpp.o -c /home/dario/Desktop/PAOO/src/Car.cpp
-
-CMakeFiles/VehicleApp.dir/src/Car.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VehicleApp.dir/src/Car.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/Car.cpp > CMakeFiles/VehicleApp.dir/src/Car.cpp.i
-
-CMakeFiles/VehicleApp.dir/src/Car.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VehicleApp.dir/src/Car.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/Car.cpp -o CMakeFiles/VehicleApp.dir/src/Car.cpp.s
-
-CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o: CMakeFiles/VehicleApp.dir/flags.make
-CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o: /home/dario/Desktop/PAOO/src/Motorcycle.cpp
-CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o: CMakeFiles/VehicleApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o -MF CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o.d -o CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o -c /home/dario/Desktop/PAOO/src/Motorcycle.cpp
-
-CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dario/Desktop/PAOO/src/Motorcycle.cpp > CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.i
-
-CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dario/Desktop/PAOO/src/Motorcycle.cpp -o CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.s
-
 # Object files for target VehicleApp
 VehicleApp_OBJECTS = \
-"CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o" \
-"CMakeFiles/VehicleApp.dir/src/main.cpp.o" \
 "CMakeFiles/VehicleApp.dir/src/Car.cpp.o" \
-"CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o"
+"CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o" \
+"CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o" \
+"CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o" \
+"CMakeFiles/VehicleApp.dir/src/main.cpp.o"
 
 # External object files for target VehicleApp
 VehicleApp_EXTERNAL_OBJECTS =
 
+VehicleApp: CMakeFiles/VehicleApp.dir/src/Car.cpp.o
+VehicleApp: CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o
+VehicleApp: CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o
 VehicleApp: CMakeFiles/VehicleApp.dir/src/Vehicle.cpp.o
 VehicleApp: CMakeFiles/VehicleApp.dir/src/main.cpp.o
-VehicleApp: CMakeFiles/VehicleApp.dir/src/Car.cpp.o
-VehicleApp: CMakeFiles/VehicleApp.dir/src/Motorcycle.cpp.o
 VehicleApp: CMakeFiles/VehicleApp.dir/build.make
 VehicleApp: CMakeFiles/VehicleApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable VehicleApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dario/Desktop/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable VehicleApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VehicleApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -156,6 +156,30 @@ src/Car.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleApp.dir/build.make CMakeFiles/VehicleApp.dir/src/Car.cpp.s
 .PHONY : src/Car.cpp.s
 
+src/CarFleet.o: src/CarFleet.cpp.o
+.PHONY : src/CarFleet.o
+
+# target to build an object file
+src/CarFleet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleApp.dir/build.make CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.o
+.PHONY : src/CarFleet.cpp.o
+
+src/CarFleet.i: src/CarFleet.cpp.i
+.PHONY : src/CarFleet.i
+
+# target to preprocess a source file
+src/CarFleet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleApp.dir/build.make CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.i
+.PHONY : src/CarFleet.cpp.i
+
+src/CarFleet.s: src/CarFleet.cpp.s
+.PHONY : src/CarFleet.s
+
+# target to generate assembly for a file
+src/CarFleet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/VehicleApp.dir/build.make CMakeFiles/VehicleApp.dir/src/CarFleet.cpp.s
+.PHONY : src/CarFleet.cpp.s
+
 src/Motorcycle.o: src/Motorcycle.cpp.o
 .PHONY : src/Motorcycle.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... src/Car.o"
 	@echo "... src/Car.i"
 	@echo "... src/Car.s"
+	@echo "... src/CarFleet.o"
+	@echo "... src/CarFleet.i"
+	@echo "... src/CarFleet.s"
 	@echo "... src/Motorcycle.o"
 	@echo "... src/Motorcycle.i"
 	@echo "... src/Motorcycle.s"
