@@ -16,10 +16,9 @@ void CarFleet::removeVehicleByModel(const std::string& model) {
         [&model](const std::shared_ptr<Vehicle>& vehicle) {
             return vehicle->getModel() == model;
         });
-
     if (it != fleet.end()) {
-        std::cout << "Vehicle with model '" << model << "' removed from fleet.\n";
         fleet.erase(it, fleet.end());
+        std::cout << "Vehicle with model '" << model << "' removed from fleet.\n";
     } else {
         std::cout << "Model '" << model << "' not found in fleet.\n";
     }
